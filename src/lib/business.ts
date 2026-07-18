@@ -115,6 +115,7 @@ export type ServiceArea = {
 };
 
 export const serviceAreas: ServiceArea[] = [
+  // Stark County
   {
     slug: "canton-oh",
     city: "Canton",
@@ -125,6 +126,89 @@ export const serviceAreas: ServiceArea[] = [
       "As the seat of Stark County, Canton sees a steady mix of daily commuters, delivery fleets, and highway traffic off I-77 and US-30 — all prime conditions for the rock chips and cracked windshields we fix every week.",
   },
   {
+    slug: "north-canton-oh",
+    city: "North Canton",
+    county: "Stark County",
+    countySlug: "stark-county",
+    nearby: ["Canton", "Jackson Township", "Plain Township", "Hartville"],
+    intro:
+      "North Canton, just northwest of Canton and home to Walsh University, sees the same steady mix of commuter and neighborhood driving that keeps us busy with windshield and rock chip work throughout Stark County.",
+  },
+  {
+    slug: "massillon-oh",
+    city: "Massillon",
+    county: "Stark County",
+    countySlug: "stark-county",
+    nearby: ["Canton", "Perry Township", "Canal Fulton", "North Canton"],
+    intro:
+      "Massillon sits along the Tuscarawas River just west of Canton — between local traffic and trucks running through town, we see plenty of cracked windshields and rock chips here.",
+  },
+  {
+    slug: "alliance-oh",
+    city: "Alliance",
+    county: "Stark County",
+    countySlug: "stark-county",
+    nearby: ["Canton", "Louisville", "Minerva", "Carrollton"],
+    intro:
+      "Alliance, home to the University of Mount Union, is one of the farther-out communities we serve in Stark County — we're happy to make the drive for windshield replacement or chip repair.",
+  },
+  {
+    slug: "louisville-oh",
+    city: "Louisville",
+    county: "Stark County",
+    countySlug: "stark-county",
+    nearby: ["Canton", "Alliance", "North Canton", "Jackson Township"],
+    intro:
+      "Louisville is a smaller Stark County community east of Canton, and one we regularly serve for mobile windshield replacement and rock chip repair.",
+  },
+  {
+    slug: "jackson-township-oh",
+    city: "Jackson Township",
+    county: "Stark County",
+    countySlug: "stark-county",
+    nearby: ["Canton", "North Canton", "Plain Township", "Massillon"],
+    intro:
+      "Jackson Township, one of the largest and busiest communities bordering Canton, is a regular stop for us — from Belden Village traffic to quiet neighborhood streets.",
+  },
+  {
+    slug: "plain-township-oh",
+    city: "Plain Township",
+    county: "Stark County",
+    countySlug: "stark-county",
+    nearby: ["Canton", "North Canton", "Jackson Township", "Louisville"],
+    intro:
+      "Plain Township, just north of downtown Canton, is one of Stark County's most populous communities — plenty of daily driving, and plenty of windshields that need our attention.",
+  },
+  {
+    slug: "perry-township-oh",
+    city: "Perry Township",
+    county: "Stark County",
+    countySlug: "stark-county",
+    nearby: ["Canton", "Massillon", "Jackson Township", "Canal Fulton"],
+    intro:
+      "Perry Township, southwest of Canton, is another high-traffic Stark County community we serve regularly for windshield replacement and chip repair.",
+  },
+  {
+    slug: "canal-fulton-oh",
+    city: "Canal Fulton",
+    county: "Stark County",
+    countySlug: "stark-county",
+    nearby: ["Massillon", "Perry Township", "Canton"],
+    intro:
+      "Canal Fulton, known for its historic canal-town charm along the Tuscarawas River, is one of the smaller communities we cover on the west side of Stark County.",
+  },
+  {
+    slug: "hartville-oh",
+    city: "Hartville",
+    county: "Stark County",
+    countySlug: "stark-county",
+    nearby: ["Canton", "North Canton", "Alliance"],
+    intro:
+      "Hartville, home to the well-known Hartville MarketPlace, is on the northern edge of Stark County — we're glad to make the trip for mobile auto glass service.",
+  },
+
+  // Summit County
+  {
     slug: "akron-oh",
     city: "Akron",
     county: "Summit County",
@@ -133,6 +217,80 @@ export const serviceAreas: ServiceArea[] = [
     intro:
       "Akron's mix of interstate commuting on I-76/I-77 and stop-and-go city driving is exactly where windshields pick up the rock chips and cracks we repair and replace throughout Summit County.",
   },
+  {
+    slug: "cuyahoga-falls-oh",
+    city: "Cuyahoga Falls",
+    county: "Summit County",
+    countySlug: "summit-county",
+    nearby: ["Akron", "Stow", "Munroe Falls", "Tallmadge"],
+    intro:
+      "Cuyahoga Falls, named for the falls on the Cuyahoga River that runs through it, sits just north of Akron and sees the same mix of highway and neighborhood driving we handle throughout Summit County.",
+  },
+  {
+    slug: "stow-oh",
+    city: "Stow",
+    county: "Summit County",
+    countySlug: "summit-county",
+    nearby: ["Cuyahoga Falls", "Munroe Falls", "Tallmadge", "Akron"],
+    intro:
+      "Stow, between Akron and Cuyahoga Falls, is a regular stop for us — mobile windshield replacement and chip repair at your home or office, no shop visit required.",
+  },
+  {
+    slug: "barberton-oh",
+    city: "Barberton",
+    county: "Summit County",
+    countySlug: "summit-county",
+    nearby: ["Akron", "Norton", "Green"],
+    intro:
+      "Barberton — the 'Magic City,' known for its Barberton chicken restaurants — is a community we serve regularly on the south side of Summit County.",
+  },
+  {
+    slug: "tallmadge-oh",
+    city: "Tallmadge",
+    county: "Summit County",
+    countySlug: "summit-county",
+    nearby: ["Akron", "Cuyahoga Falls", "Stow"],
+    intro:
+      "Tallmadge, known for its unique circular town square, is a Summit County community just east of Akron that we cover for mobile auto glass work.",
+  },
+  {
+    slug: "fairlawn-oh",
+    city: "Fairlawn",
+    county: "Summit County",
+    countySlug: "summit-county",
+    nearby: ["Akron", "Norton", "Barberton"],
+    intro:
+      "Fairlawn, home to Summit Mall and a lot of daily retail and commuter traffic, is one of the busier communities we serve west of Akron.",
+  },
+  {
+    slug: "green-oh",
+    city: "Green",
+    county: "Summit County",
+    countySlug: "summit-county",
+    nearby: ["Akron", "Barberton", "Norton", "North Canton"],
+    intro:
+      "Green, home to the Akron-Canton Airport, sits on the Summit-Stark county line — we cover it as part of both our Summit and Stark County service area.",
+  },
+  {
+    slug: "norton-oh",
+    city: "Norton",
+    county: "Summit County",
+    countySlug: "summit-county",
+    nearby: ["Barberton", "Akron", "Green"],
+    intro:
+      "Norton, between Akron and Barberton, is another Summit County community we regularly serve for windshield replacement and rock chip repair.",
+  },
+  {
+    slug: "munroe-falls-oh",
+    city: "Munroe Falls",
+    county: "Summit County",
+    countySlug: "summit-county",
+    nearby: ["Cuyahoga Falls", "Stow", "Akron"],
+    intro:
+      "Munroe Falls, a small city tucked between Cuyahoga Falls and Stow, is part of our regular Summit County coverage.",
+  },
+
+  // Wayne County
   {
     slug: "wooster-oh",
     city: "Wooster",
@@ -143,6 +301,53 @@ export const serviceAreas: ServiceArea[] = [
       "Wooster and the rest of Wayne County run on US-30 and a lot of rural two-lane driving — both hard on windshields. We come to farms, homes, and businesses throughout the area.",
   },
   {
+    slug: "orrville-oh",
+    city: "Orrville",
+    county: "Wayne County",
+    countySlug: "wayne-county",
+    nearby: ["Wooster", "Rittman", "Dalton"],
+    intro:
+      "Orrville, best known as the headquarters of the J.M. Smucker Company, is a Wayne County community we serve regularly for mobile auto glass work.",
+  },
+  {
+    slug: "rittman-oh",
+    city: "Rittman",
+    county: "Wayne County",
+    countySlug: "wayne-county",
+    nearby: ["Orrville", "Wooster", "Wadsworth"],
+    intro:
+      "Rittman, on the Wayne-Medina county line, is a smaller community we regularly cover for windshield replacement and rock chip repair.",
+  },
+  {
+    slug: "dalton-oh",
+    city: "Dalton",
+    county: "Wayne County",
+    countySlug: "wayne-county",
+    nearby: ["Wooster", "Apple Creek", "Orrville"],
+    intro:
+      "Dalton, a small Wayne County village on the edge of Amish country, is part of our regular mobile service area.",
+  },
+  {
+    slug: "apple-creek-oh",
+    city: "Apple Creek",
+    county: "Wayne County",
+    countySlug: "wayne-county",
+    nearby: ["Wooster", "Dalton", "Smithville"],
+    intro:
+      "Apple Creek, a small Wayne County village, is another stop on our regular mobile auto glass route.",
+  },
+  {
+    slug: "smithville-oh",
+    city: "Smithville",
+    county: "Wayne County",
+    countySlug: "wayne-county",
+    nearby: ["Wooster", "Orrville", "Apple Creek"],
+    intro:
+      "Smithville, in southern Wayne County, is part of our regular service area for windshield replacement and chip repair.",
+  },
+
+  // Medina County
+  {
     slug: "medina-oh",
     city: "Medina",
     county: "Medina County",
@@ -151,6 +356,53 @@ export const serviceAreas: ServiceArea[] = [
     intro:
       "Medina County drivers deal with everything from I-71 highway speed to the historic downtown square — we handle windshield replacement and chip repair anywhere in between.",
   },
+  {
+    slug: "brunswick-oh",
+    city: "Brunswick",
+    county: "Medina County",
+    countySlug: "medina-county",
+    nearby: ["Medina", "Wadsworth", "Lodi"],
+    intro:
+      "Brunswick, one of the largest cities in Medina County and a regular Cleveland-area commuter suburb, is a busy stop on our mobile service route.",
+  },
+  {
+    slug: "wadsworth-oh",
+    city: "Wadsworth",
+    county: "Medina County",
+    countySlug: "medina-county",
+    nearby: ["Medina", "Brunswick", "Seville"],
+    intro:
+      "Wadsworth, just south of Medina, is one of the county's larger communities and a regular part of our mobile auto glass coverage.",
+  },
+  {
+    slug: "lodi-oh",
+    city: "Lodi",
+    county: "Medina County",
+    countySlug: "medina-county",
+    nearby: ["Medina", "Wadsworth", "Seville"],
+    intro:
+      "Lodi, home to the outlet shops along I-71, is a smaller Medina County community we serve regularly.",
+  },
+  {
+    slug: "seville-oh",
+    city: "Seville",
+    county: "Medina County",
+    countySlug: "medina-county",
+    nearby: ["Medina", "Wadsworth", "Lodi"],
+    intro:
+      "Seville, a small village in southern Medina County, is part of our regular mobile service area.",
+  },
+  {
+    slug: "litchfield-oh",
+    city: "Litchfield",
+    county: "Medina County",
+    countySlug: "medina-county",
+    nearby: ["Medina", "Lodi", "Seville"],
+    intro:
+      "Litchfield Township, in Medina County, is another stop on our regular mobile route for windshield replacement and chip repair.",
+  },
+
+  // Holmes County
   {
     slug: "millersburg-oh",
     city: "Millersburg",
@@ -161,6 +413,53 @@ export const serviceAreas: ServiceArea[] = [
       "Millersburg and the rest of Holmes County — Amish country — means gravel roads, farm equipment, and rural highways that are tough on glass. We come straight to your driveway or shop.",
   },
   {
+    slug: "berlin-oh",
+    city: "Berlin",
+    county: "Holmes County",
+    countySlug: "holmes-county",
+    nearby: ["Millersburg", "Walnut Creek", "Winesburg"],
+    intro:
+      "Berlin, right in the heart of Ohio's Amish Country, is one of the most-visited towns in Holmes County — and a regular stop for our mobile auto glass service.",
+  },
+  {
+    slug: "walnut-creek-oh",
+    city: "Walnut Creek",
+    county: "Holmes County",
+    countySlug: "holmes-county",
+    nearby: ["Berlin", "Millersburg", "Holmesville"],
+    intro:
+      "Walnut Creek, another well-known Amish Country community, is part of our regular Holmes County coverage.",
+  },
+  {
+    slug: "killbuck-oh",
+    city: "Killbuck",
+    county: "Holmes County",
+    countySlug: "holmes-county",
+    nearby: ["Millersburg", "Holmesville"],
+    intro:
+      "Killbuck, a small village in southern Holmes County, is part of our regular mobile service area.",
+  },
+  {
+    slug: "holmesville-oh",
+    city: "Holmesville",
+    county: "Holmes County",
+    countySlug: "holmes-county",
+    nearby: ["Millersburg", "Killbuck", "Walnut Creek"],
+    intro:
+      "Holmesville, a small Holmes County village, is another stop on our regular mobile route.",
+  },
+  {
+    slug: "winesburg-oh",
+    city: "Winesburg",
+    county: "Holmes County",
+    countySlug: "holmes-county",
+    nearby: ["Berlin", "Millersburg"],
+    intro:
+      "Winesburg, a small Holmes County village, is part of our regular mobile auto glass coverage.",
+  },
+
+  // Ashland County
+  {
     slug: "ashland-oh",
     city: "Ashland",
     county: "Ashland County",
@@ -169,6 +468,44 @@ export const serviceAreas: ServiceArea[] = [
     intro:
       "Ashland sits right on I-71, so we see a lot of highway-speed rock chips and cracks from drivers passing through — plus everyday wear for everyone who calls Ashland County home.",
   },
+  {
+    slug: "loudonville-oh",
+    city: "Loudonville",
+    county: "Ashland County",
+    countySlug: "ashland-county",
+    nearby: ["Ashland", "Savannah", "Jeromesville"],
+    intro:
+      "Loudonville, known as the canoeing capital of Ohio and gateway to Mohican State Park, is a regular stop on our Ashland County service route.",
+  },
+  {
+    slug: "savannah-oh",
+    city: "Savannah",
+    county: "Ashland County",
+    countySlug: "ashland-county",
+    nearby: ["Ashland", "Jeromesville"],
+    intro:
+      "Savannah, a small Ashland County village, is part of our regular mobile service area.",
+  },
+  {
+    slug: "hayesville-oh",
+    city: "Hayesville",
+    county: "Ashland County",
+    countySlug: "ashland-county",
+    nearby: ["Ashland", "Loudonville"],
+    intro:
+      "Hayesville, a small Ashland County village, is another stop on our regular mobile route.",
+  },
+  {
+    slug: "jeromesville-oh",
+    city: "Jeromesville",
+    county: "Ashland County",
+    countySlug: "ashland-county",
+    nearby: ["Ashland", "Savannah"],
+    intro:
+      "Jeromesville, a small Ashland County village, is part of our regular mobile auto glass coverage.",
+  },
+
+  // Carroll County
   {
     slug: "carrollton-oh",
     city: "Carrollton",
@@ -179,6 +516,35 @@ export const serviceAreas: ServiceArea[] = [
       "Carrollton and Carroll County's rural roads and rolling hills are hard on windshields — we bring full mobile windshield replacement and chip repair straight to you, no need to drive to a shop.",
   },
   {
+    slug: "malvern-oh",
+    city: "Malvern",
+    county: "Carroll County",
+    countySlug: "carroll-county",
+    nearby: ["Carrollton", "Sherrodsville"],
+    intro:
+      "Malvern, a small Carroll County village, is part of our regular mobile service area.",
+  },
+  {
+    slug: "minerva-oh",
+    city: "Minerva",
+    county: "Carroll County",
+    countySlug: "carroll-county",
+    nearby: ["Carrollton", "Alliance"],
+    intro:
+      "Minerva, which straddles the Carroll and Stark county line, is a regular stop on our mobile auto glass route.",
+  },
+  {
+    slug: "sherrodsville-oh",
+    city: "Sherrodsville",
+    county: "Carroll County",
+    countySlug: "carroll-county",
+    nearby: ["Carrollton", "Malvern"],
+    intro:
+      "Sherrodsville, a small Carroll County village near Atwood Lake, is part of our regular mobile coverage.",
+  },
+
+  // Portage County
+  {
     slug: "kent-oh",
     city: "Kent",
     county: "Portage County",
@@ -186,6 +552,42 @@ export const serviceAreas: ServiceArea[] = [
     nearby: ["Ravenna", "Streetsboro", "Aurora", "Windham"],
     intro:
       "Between Kent State commuters, downtown Kent, and the rest of Portage County, we handle windshield replacement, chip repair, and back glass work wherever you are — home, work, or campus.",
+  },
+  {
+    slug: "ravenna-oh",
+    city: "Ravenna",
+    county: "Portage County",
+    countySlug: "portage-county",
+    nearby: ["Kent", "Streetsboro", "Windham"],
+    intro:
+      "Ravenna, the Portage County seat, is a regular stop on our mobile service route right alongside Kent.",
+  },
+  {
+    slug: "streetsboro-oh",
+    city: "Streetsboro",
+    county: "Portage County",
+    countySlug: "portage-county",
+    nearby: ["Kent", "Ravenna", "Aurora"],
+    intro:
+      "Streetsboro, along the I-480/SR-14 corridor, is a busy Portage County community we cover regularly.",
+  },
+  {
+    slug: "aurora-oh",
+    city: "Aurora",
+    county: "Portage County",
+    countySlug: "portage-county",
+    nearby: ["Kent", "Streetsboro", "Ravenna"],
+    intro:
+      "Aurora, home to the Aurora Premium Outlets, is one of the more upscale communities we serve in Portage County.",
+  },
+  {
+    slug: "windham-oh",
+    city: "Windham",
+    county: "Portage County",
+    countySlug: "portage-county",
+    nearby: ["Ravenna", "Kent"],
+    intro:
+      "Windham, a small Portage County village, is part of our regular mobile auto glass coverage.",
   },
 ];
 
