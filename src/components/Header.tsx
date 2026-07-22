@@ -11,6 +11,7 @@ const navLinks = [
   { href: "/warranty", label: "Warranty" },
   { href: "/about", label: "About" },
   { href: "/faq", label: "FAQ" },
+  { href: "/blog", label: "Blog" },
 ];
 
 export default function Header() {
@@ -31,7 +32,7 @@ export default function Header() {
           </span>
         </Link>
 
-        <nav className="hidden items-center gap-8 lg:flex">
+        <nav className="hidden items-center gap-6 lg:flex">
           {navLinks.map((link) => (
             <Link
               key={link.href}

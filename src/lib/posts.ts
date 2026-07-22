@@ -1,6 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
+import sanitizeHtml from 'sanitize-html';
 
 const POSTS_DIR = path.join(process.cwd(), 'content/posts');
 const DIRECTORIES_DIR = path.join(process.cwd(), 'content/directories');
@@ -17,6 +18,26 @@ export interface PostMeta {
 export interface Post extends PostMeta {
   content: string;
 }
+
+// Content in content/posts and content/directories is written by an
+// automated tool with no human review before publish. Sanitize before
+// it ever reaches dangerouslySetInnerHTML.
+const SANITIZE_OPTIONS: sanitizeHtml.IOptions = {
+  allowedTags: [
+    'h2', 'h3', 'h4', 'p', 'br', 'hr',
+    'strong', 'em', 'b', 'i', 'u', 's',
+    'a', 'ul', 'ol', 'li',
+    'table', 'thead', 'tbody', 'tr', 'th', 'td',
+    'blockquote', 'code', 'pre',
+  ],
+  allowedAttributes: {
+    a: ['href', 'title'],
+  },
+  allowedSchemes: ['https', 'mailto', 'tel'],
+  transformTags: {
+    a: sanitizeHtml.simpleTransform('a', { rel: 'noopener noreferrer' }),
+  },
+};
 
 function getSlugsIn(dir: string): string[] {
   if (!fs.existsSync(dir)) return [];
@@ -38,7 +59,7 @@ function getEntryIn(dir: string, slug: string): Post | null {
     description: data.description ?? '',
     keyword: data.keyword ?? '',
     wordCount: data.wordCount ?? 0,
-    content,
+    content: sanitizeHtml(content, SANITIZE_OPTIONS),
   };
 }
 

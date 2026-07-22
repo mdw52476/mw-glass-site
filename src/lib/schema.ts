@@ -73,6 +73,31 @@ export function serviceSchema(service: {
   };
 }
 
+export function articleSchema(post: {
+  slug: string;
+  title: string;
+  description: string;
+  date: string;
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "@id": `${SITE_URL}/blog/${post.slug}/#article`,
+    headline: post.title,
+    description: post.description,
+    url: `${SITE_URL}/blog/${post.slug}`,
+    datePublished: post.date || undefined,
+    dateModified: post.date || undefined,
+    author: {
+      "@id": `${SITE_URL}/#organization`,
+    },
+    publisher: {
+      "@id": `${SITE_URL}/#organization`,
+    },
+    mainEntityOfPage: `${SITE_URL}/blog/${post.slug}`,
+  };
+}
+
 export function faqSchema(faqs: { question: string; answer: string }[]) {
   return {
     "@context": "https://schema.org",
